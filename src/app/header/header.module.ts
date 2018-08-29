@@ -1,14 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { HeaderRoutingModule } from './header-routing.module';
-import { TopHeaderComponent } from './top-header/top-header.component';
+import { HeaderComponent } from './header.component';
+// import { BsDropdownModule } from 'ngx-bootstrap';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   imports: [
     CommonModule,
-    HeaderRoutingModule
+    // BsDropdownModule.forRoot(),
+    MatMenuModule,
+    MatButtonModule
   ],
-  declarations: [TopHeaderComponent]
+  declarations: [HeaderComponent],
+  exports: [
+    HeaderComponent,
+    MatMenuModule,
+    MatButtonModule
+  ]
 })
 export class HeaderModule { }

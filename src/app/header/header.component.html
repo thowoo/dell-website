@@ -1,0 +1,50 @@
+<!-- <div class="head-wrapper"> -->
+<nav class="container-fluid navbar navbar-expand-xl bg-primary" role="navigation">
+
+  <div class="navbar-brand">
+    <a href="#" class="text-white">DELL</a>
+  </div>
+
+  <div class="col-sm-8 d-none d-sm-block">
+    <div class="input-group input-group-sm my-2">
+      <input class="form-control" type="text" name="navbar-input-search" id="navbar-input-search" aria-label="Search" placeholder="What can we help you find?"
+        autocomplete="off">
+      <div class="input-group-append">
+        <button class="btn btn-primary btn-outline-light" type="submit">
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="utility">
+    <ul class="utility">
+      <li id="mobile-search-button" class="mobile-search-button dropdown text-center d-block d-sm-none">
+        <a class="text-white" #navbar_right_search (click)="searchDropdownToggle()">
+          <i class="nav-search-icon-small fas fa-search" id="search-icon"></i>
+          <label for="search-icon" class="small">Search</label>
+        </a>
+      </li>
+      <li id="mobile-signin-button" class="mobile-signin-button dropdown text-center">
+        <a class="text-white ">
+          <i class="nav-search-icon-small fas fa-user" id="user-icon"></i>
+          <label for="user-icon" class="small">Sign In</label>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<div *ngIf="showSearchDropdown" class="container border border-primary border-bottom-4">
+  <div class="input-group input-group-sm my-2">
+    <input class="form-control" type="text" name="navbar-input-search" id="navbar-input-search" aria-label="Search" placeholder="What can we help you find?"
+      autocomplete="off">
+    <div class="input-group-append">
+      <button class="btn btn-primary" type="submit">
+        <i class="fas fa-search d-sm-none d-md-none"></i>
+        <label>Search</label>
+      </button>
+    </div>
+  </div>
+</div>
