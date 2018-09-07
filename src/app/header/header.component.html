@@ -1,5 +1,5 @@
 <!-- <div class="head-wrapper"> -->
-<nav class="container-fluid navbar navbar-expand-xl bg-primary" role="navigation">
+<nav class="container-fluid navbar bg-primary" role="navigation">
 
   <div class="navbar-brand">
     <a href="#" class="text-white">DELL</a>
@@ -35,6 +35,24 @@
 
   </div>
 </nav>
+
+<div class="horizontal-nav-link bg-primary text-white">
+  <ul class="pt-1">
+    <li class="horizontal-nav-link-first-level pl-2" (mouseenter)="openMenu('firstMenu')" (mouseleave)="closeMenu('firstMenu')" >
+      <p>Products</p>
+      <ul *ngIf="showFirstSubMenu" class="sub-menu-first-level">
+        <li class="sub-menu-item pb-2 my-auto">A</li>
+        <li>B</li>
+      </ul>
+    </li>
+    <li class="horizontal-nav-link-first-level pl-2">
+      <p>Solutions</p>
+    </li>
+    <li class="horizontal-nav-link-first-level pl-2">Services</li>
+    <li class="horizontal-nav-link-first-level pl-2">Support</li>
+    <li class="horizontal-nav-link-first-level pl-3">Deals</li>
+  </ul>
+</div>
 
 <div *ngIf="showSearchDropdown" class="container border border-primary border-bottom-4">
   <div class="input-group input-group-sm my-2">

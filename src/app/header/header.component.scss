@@ -27,4 +27,31 @@ a {
     padding: 16px 8px 8px;
 }
 
+.horizontal-nav-link {
+    height: 2.5rem;
+}
+
+// .horizontal-nav-link ul {
+    
+// }
+
+.horizontal-nav-link > ul > li{
+    display: inline;
+    margin-left: 1rem;
+    width: 80px;
+    float: left;
+}
+
+.horizontal-nav-link-first-level:hover {
+    background-color: white;
+    color: #007bff;
+}
+
+.sub-menu-item:hover {
+    background-color: #cce7f3;
+}
+
+.navbar-brand {
+    margin-left: 1rem;
+}
 
