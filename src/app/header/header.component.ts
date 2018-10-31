@@ -11,12 +11,6 @@ export class HeaderComponent implements OnInit {
 
   // @ViewChild('firstSubMenu') firstSubMenu: ElementRef;
 
-  showFirstSubMenu = false;
-  showSecondSubMenu = false;
-  showThirdSubMenu = false;
-  showForthSubMenu = false;
-  showFifthSubMenu = false;
-
   constructor() { }
 
   ngOnInit() {
@@ -25,22 +19,6 @@ export class HeaderComponent implements OnInit {
   searchDropdownToggle() {
     console.log('show search dropdown clicked');
     this.showSearchDropdown = !this.showSearchDropdown;
-  }
-
-  openMenu(subMenu) {
-    switch (subMenu) {
-      case 'firstMenu':
-        this.showFirstSubMenu = true;
-        break;
-    }
-  }
-
-  closeMenu(subMenu) {
-    switch (subMenu) {
-      case 'firstMenu':
-        this.showFirstSubMenu = false;
-        break;
-    }
   }
 
 }

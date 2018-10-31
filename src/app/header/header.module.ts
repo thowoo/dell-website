@@ -5,6 +5,7 @@ import { HeaderComponent } from './header.component';
 // import { BsDropdownModule } from 'ngx-bootstrap';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { HorizontalNavBarComponent } from './horizontal-nav-bar/horizontal-nav-bar.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,7 @@ import {MatButtonModule} from '@angular/material/button';
     MatMenuModule,
     MatButtonModule
   ],
-  declarations: [HeaderComponent],
+  declarations: [HeaderComponent, HorizontalNavBarComponent],
   exports: [
     HeaderComponent,
     MatMenuModule,

@@ -1,0 +1,67 @@
+<div class="horizontal-nav-link bg-primary text-white">
+  <ul class="main-menu clearfix pt-1">
+    <li class="menu-item-tier1 text-center" (mouseenter)="showFirstSubMenu = true" (mouseleave)="showFirstSubMenu = false">
+      <p>Products</p>
+      <ul *ngIf="showFirstSubMenu" class="sub-menu-first-level">
+        <li class="sub-menu-item pb-1 px-2 text-left">Laptops
+          <i class="fas fa-angle-right float-right pt-1"></i>
+          <ul class="sub-menu-second-level">
+            <li class="sub-menu-item-tier2">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</li>
+            <li>bbbbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</li>
+          </ul>
+        </li>
+        
+        <li class="sub-menu-item pb-1 px-2 text-left">Desktops & All-in-On PCs
+          <i class="fas fa-angle-right float-right pt-1"></i>
+        </li>
+        <li class="sub-menu-item pb-1 px-2 text-left">Tablets & 2-in-1 Laptops
+          <i class="fas fa-angle-right float-right pt-1"></i>
+        </li>
+        <li class="sub-menu-item pb-1 px-2 text-left">Gaming
+          <i class="fas fa-angle-right float-right pt-1"></i>
+        </li>
+        <li class="sub-menu-item pb-1 px-2 text-left">Workstations</li>
+        <li class="sub-menu-item pb-1 px-2 text-left">Thin Clients</li>
+        <li class="sub-menu-item pb-1 px-2 text-left">Servers & Storage</li>
+        <li class="sub-menu-item pb-1 px-2 text-left">Networking
+          <i class="fas fa-angle-right float-right pt-1"></i>
+        </li>
+        <li class="sub-menu-item pb-1 px-2 text-left">Monitors
+          <i class="fas fa-angle-right float-right pt-1"></i>
+        </li>
+        <li class="sub-menu-item pb-1 px-2 text-left">Printers & Ink
+          <i class="fas fa-angle-right float-right pt-1"></i>
+        </li>
+        <li class="sub-menu-item pb-1 px-2 text-left">Software
+          <i class="fas fa-angle-right float-right pt-1"></i>
+        </li>
+        <li class="sub-menu-item pb-1 px-2 text-left">Electronics & Accessories
+          <i class="fas fa-angle-right float-right pt-1"></i>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-item-tier1 pl-2">
+      <p>Solutions</p>
+    </li>
+    <li class="menu-item-tier1 pl-2">Services</li>
+    <li class="menu-item-tier1 pl-2">Support</li>
+    <li class="menu-item-tier1 pl-3">Deals</li>
+  </ul>
+</div>
+
+
+
+
+
+
+<!-- <ul class="pt-1" role="menu">
+  <li *ngFor="let item of menuItems" class="menu-item-tier1 pl-2" (mouseenter)="$event.stopPropagation();this.item.menuDropDownOpen = true"
+    (mouseleave)="$event.stopPropagation();this.item.menuDropDownOpen = false">
+    <a href="{{item.routerLink}}" target="{{item.openInNewTab}}" title="{{item.longLabel}}">
+      {{item.label}}
+    </a>
+    <div class="horizontal-nav-link-second-level" *ngIf="item.subItems && item.subItems.length > 0">
+      
+    </div>
+  </li>
+</ul> -->
